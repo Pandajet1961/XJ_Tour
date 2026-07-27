@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新疆南疆环线之旅 16日行程手册</title>
+    <style>
+        :root {
+            --primary-color: #c85a17;
+            --secondary-color: #2c3e50;
+            --bg-color: #f4f6f8;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --accent-gold: #d4af37;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding-bottom: 50px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .nav-scroller {
+            position: sticky;
+            top: 0;
+            background: white;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 10px;
+        }
+
+        .nav-scroller a {
+            display: inline-block;
+            padding: 6px 14px;
+            margin-right: 8px;
+            background: #eef2f5;
+            color: var(--secondary-color);
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .nav-scroller a:hover, .nav-scroller a.active {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .day-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--primary-color);
+            scroll-margin-top: 60px;
+        }
+
+        .day-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .day-title {
+            font-size: 1.25rem;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .day-date {
+            font-size: 0.9rem;
+            background: #fff3e0;
+            color: var(--primary-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .meta-tags {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 15px;
+            background: #f8f9fa;
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+
+        .meta-tags span {
+            display: flex;
+            align-items: center;
+        }
+
+        .route-path {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .highlights {
+            background: #fafafa;
+            border-radius: 8px;
+            padding: 12px;
+            border: 1px dashed #ddd;
+        }
+
+        .highlights h4 {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .highlight-item {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .highlight-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .spot-name {
+            font-weight: bold;
+            color: #111;
+        }
+
+        .notice {
+            font-size: 0.8rem;
+            color: #d9534f;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        @media (max-width: 600px) {
+            .meta-tags {
+                flex-direction: column;
+                gap: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>新疆南疆秋季全景 16日游</h1>
+        <p>行程手册 & 景点风光指南 (10.18 - 11.02)</p>
+    </header>
+
+    <div class="nav-scroller" id="nav"></div>
+
+    <div class="container">
+
+        <div class="day-card" id="D1">
+            <div class="day-header">
+                <span class="day-title">D1 集合作业</span>
+                <span class="day-date">10/18</span>
+            </div>
+            <div class="meta-tags">
+                <span>🚗 里程：20 km</span>
+                <span>🍱 餐饮：无</span>
+                <span>🏨 住宿：乌鲁木齐</span>
+            </div>
+            <div class="route-path">📍 家 - 乌鲁木齐 - 乌鲁木齐市区自由活动</div>
+            <div class="highlights">
+                <h4>📌 今日特色与建议</h4>
+                <div class="highlight-item"><span class="spot-name">乌鲁木齐市区：</span>抵达新疆首府，适应时差（新疆比内地晚约2小时）。推荐前往【新疆古生态园】或在市区品尝正宗新疆烤肉、抓饭。</div>
+            </div>
+        </div>
+
+        <div class="day-card" id="D2">
+            <div class="day-header">
+                <span class="day-title">D2 自由探索</span>
+                <span class="day-date">10/19</span>
+            </div>
+            <div class="meta-tags">
+                <span>🚗 里程：0 km</span>
+                <span>🍱 餐饮：早</span>
+                <span>🏨 住宿：乌鲁木齐</span>
+            </div>
+            <div class="route-path">📍 乌鲁木齐自由活动一天 (不安排用车)</div>
+            <div class="highlights">
+                <h4>📌 今日特色与建议</h4>
+                <div class="highlight-item"><span class="spot-name">乌鲁木齐自由行：</span>可前往【国际大巴扎】体验浓郁的伊斯兰风情和采买干果，或去【红山公园】俯瞰全市夜景。</div>
+            </div>
+        </div>
+
+        <div class="day-card" id="D3">
+            <div class="day-header">
+                <span class="day-title">D3 吐鲁番风情</span>
+                <span class="day-date">10/20</span>
+            </div>
+            <div class="meta-tags">
+                <span>🚗 里程：200 km</span>
+                <span>🍱 餐饮：早</span>
+                <span>🏨 住宿：吐鲁番</span>
+            </div>
+            <div class="route-path">📍 乌鲁木齐博物馆 - 坎儿井 - 火焰山 - 吐峪沟麻扎村 - 吐鲁番</div>
+            <div class="highlights">
+                <h4>📌 景点特色</h4>
+                <div class="highlight-item"><span class="spot-name">坎儿井：</span>荒漠地区的地下水利奇迹，感受古人的伟大智慧。</div>
+                <div class="highlight-item"><span class="spot-name">火焰山：</span>《西游记》文化地标，地表赤红，感受独特的丹霞地貌与地热。</div>
+                <div class="highlight-item"><span class="spot-name">吐峪沟麻扎村：</span>新疆现存最古老的维吾尔族村落，被誉为“中国第一土庄”，黄土建筑风格极具摄影价值。</div>
+            </div>
+        </div>
+
+        <div class="day-card" id="D4">
+            <div class="day-header">
+                <span class="day-title">D4 走进南疆 gateway</span>
+                <span class="day-date">10/21</span>
+            </div>
+            <div class="meta-tags">
+                <span>🚗 里程：150 km</span>
+                <span>🍱 餐饮：早</span>
+                <span>🏨 住宿：库尔勒</span>
+            </div>
+            <div class="route-path">📍 库尔勒 - 铁门关 - 南北疆分界线 - 博斯腾湖 - 库尔勒</div>
+            <div class="highlights">
+                <h4>📌 景点特色</h4>
+                <div class="highlight-item"><span class="spot-name">铁门关：</span>古丝绸之路北道要冲，天山山脉中的险要关隘。</div>
+                <div class="highlight-item"><span class="spot-name">博斯腾湖：</span>中国最大的内陆淡水湖，秋季水清天蓝，芦苇丛生，常有大天鹅栖息。</div>
+            </div>
+        </div>
+
+        <div class="day-card" id="D5">
+            <div class="day-header">
+                <span class="day-title">D5 胡杨林秘境</span>
+                <span class="day-date">10/22</span>
+            </div>
+            <div class="meta-tags">
+                <span>🚗 里程：380 km</span>
+                <span>🍱 餐饮：早</span>
+                <span>🏨 住宿：库尔勒</span>
+            </div>
+            <div class="route-path">📍 库尔勒 - 罗布人村寨 - 葫芦岛胡杨景区 - 库尔勒</div>
+            <div class="highlights">
+                <h4>📌 景点特色</h4>
+                <div class="highlight-item"><span class="spot-name">罗布人村寨：</span>集沙漠、塔里木河、胡杨林与罗布人原始文化于一体的独特景区。</div>
+                <div class="highlight-item"><span class="spot-name">葫芦岛胡杨景区：</span>水上胡杨与沙丘结合的绝美摄影点，10月下旬正值金色胡杨最佳观赏期。</div>
+                <div class="notice">⚠️ 注：此日行程外籍游客不能参观。</div>
+            </div>
+        </div>
+
+        <div class="day-card" id="D6">
+            <div class="day-header">
+                <span class="day-title">D6 塔里木金色廊道</span>
+                <span class="day-date">10/23</span>
+            </div>
+            <div class="meta-tags">
+                <span>🚗 里程：340 km</span>
+                <span>🍱 餐饮：早</span>
+                <span>🏨 住宿：库车</span>
+            </div>
+            <div class="route-path">📍 库尔勒 - 途观塔河流域 - 轮台胡杨林 - 库车王府 - 库车</div>
+            <div class="highlights">
+                <h4>📌 景点特色</h4>
+                <div class="highlight-item"><span class="spot-name">轮台胡杨林：</span>世界面积最大的原始胡杨林公园，可乘小火车穿行于金黄色树海之中。</div>
+                <div class="highlight-item"><span class="spot-name">库车王府：</span>融合中原与伊斯兰风格的王府建筑，了解世袭库车王的历史。</div>
+            </div>
+        </div>
+
+        <div class="day-card" id="D7">
+            <div class="day-header">
+                <span class="day-title">D7 地质奇观与石窟</span>
+                <span class="day-date">10/24</span>
+            </div>
+            <div class="meta-tags">
+                <span>🚗 里程：200 km</span>
+                <span>🍱 餐饮：早</span>
+                <span>🏨 住宿：库车</span>
+            </div>
+            <div class="route-path">📍 库车 - 天山神秘大峡谷 - 烈焰泉 - 克孜尔千佛洞 - 苏巴什佛寺遗址 - 库车</div>
+            <div class="highlights">
+                <h4>📌 景点特色</h4>
+                <div class="highlight-item"><span class="spot-name">天山神秘大峡谷：</span>红褐色巨大山体在阳光下如火烧般绚丽，典型的雅丹与侵蚀地貌。</div>
+                <div class="highlight-item"><span class="spot-name">克孜尔千佛洞：</span>比莫高窟历史更悠久的石窟艺术宝库，龟兹文化的花朵。</div>
+                <div class="highlight-item"><span class="spot-name">苏巴什佛寺遗址：</span>古龟兹国最大的佛寺遗址，玄奘法师曾在此讲经。</div>
+            </div>
+        </div>
+
+        <div class="day-card" id="D8">
+            <div class="day-header">
+                <span class="day-title">D8 壮美大峡谷</span>
+                <span class="day-date">10/25</span>
+            </div>
+            <div class="meta-tags">
+                <span>🚗 里程：350 km</span>
+                <span>🍱 餐饮：早</span>
+                <span>🏨 住宿：阿拉尔</span>
+            </div>
+            <div class="route-path">📍 库车 - 温宿大峡谷 - 阿拉尔</div>
+            <div class="highlights">
+                <h4>📌 景点特色</h4>
+                <div class="highlight-item"><span class="spot-name">温宿大峡谷（大峡谷之王）：</span>拥有新疆罕见的远古岩盐地质绝景、巨型丹霞与雅丹地貌集群，极具视觉震撼力。</div>
+            </div>
+        </div>
+
+        <div class="day-card" id="D9">
+            <div class="day-header">
+                <span class="day-title">D9 穿沙公路与夜市</span>
+                <span class="day-date">10/26</span>
+            </div>
+            <div class="meta-tags">
+                <span>🚗 里程：460 km</span>
+                <span>🍱 餐饮：早</span>
+                <span>🏨 住宿：和田</span>
+            </div>
+            <div class="route-path">📍 阿拉尔 - 塔克拉玛干沙漠公路 - 沙漠翡翠湖 - 和田夜市</div>
+            <div class="highlights">
+                <h4>📌 景点特色</h4>
+                <div class="highlight-item"><span class="spot-name">塔克拉玛干沙漠公路：</span>纵贯“死亡之海”，体验浩瀚无垠的沙漠风光。</div>
+                <div class="highlight-item"><span class="spot-name">和田夜市：</span>南疆最具烟火气的地方！必尝烤蛋、烤羊包子、三泡台和各类和田特色美食。</div>
+            </div>
+        </div>
+
+        <div class="day-card" id="D10">
+            <div class="day-header">
+                <span class="day-title">D10 昆仑起点与老城</span>
+                <span class="day-date">10/27</span>
+            </div>
+            <div class="meta-tags">
+                <span>🚗 里程：350 km</span>
+                <span>🍱 餐饮：早</span>
+                <span>🏨 住宿：莎车</span>
+            </div>
+            <div class="route-path">📍 和田 - 叶城0公里打卡处 - 莎车老城 - 莎车</div>
+            <div class="highlights">
+                <h4>📌 景点特色</h4>
+                <div class="highlight-item"><span class="spot-name">叶城0公里：</span>新藏线（219国道）的起点，“天路零公里”地标打卡。</div>
+                <div class="highlight-item"><span class="spot-name">莎车老城与非遗：</span>十二木卡姆发源地，参观莎车非遗博览园（叶尔羌汗王宫），建筑色彩极其唯美。</div>
+            </div>
+        </div>
+
+        <div class="day-card" id="D11">
+            <div class="day-header">
+                <span class="day-title">D11 天门与喀什老城</span>
+                <span class="day-date">10/28</span>
+            </div>
+            <div class="meta-tags">
+                <span>🚗 里程：300 km</span>
+                <span>🍱 餐饮：早</span>
+                <span>🏨 住宿：喀什</span>
+            </div>
+            <div class="route-path">📍 莎车 - 阿图什天门景区 - 喀什古城漫步 - 喀什</div>
+            <div class="highlights">
+                <h4>📌 景点特色</h4>
+                <div class="highlight-item"><span class="spot-name">阿图什天门：</span>高达数百米的天然石拱门，耸立于高山之巅，被评为全球最高天然石拱门之一。</div>
+                <div class="highlight-item"><span class="spot-name">喀什古城：</span>活着的千年古城，体验慢生活、饮百年老茶馆，感受浓郁的西域风情。</div>
+            </div>
+        </div>
+
+        <div class="day-card" id="D12">
+            <div class="day-header">
+                <span class="day-title">D12 登上帕米尔高原</span>
+                <span class="day-date">10/29</span>
+            </div>
+            <div class="meta-tags">
+                <span>🚗 里程：300 km</span>
+                <span>🍱 餐饮：早</span>
+                <span>🏨 住宿：白沙湖酒店</span>
+            </div>
+            <div class="route-path">📍 喀什 - 白沙湖北岸 - 十八罗汉峰 - 木吉火山口 - 白沙湖住宿</div>
+            <div class="highlights">
+                <h4>📌 景点特色</h4>
+                <div class="highlight-item"><span class="spot-name">白沙湖：</span>一半是冰蓝湖水，一半是白色沙山，宛如仙境。</div>
+                <div class="highlight-item"><span class="spot-name">木吉火山口：</span>“帕米尔之眼”，拥有形成的火山眼与多色矿泉湿地，遥望公格尔九别峰。</div>
+            </div>
+        </div>
+
+        <div class="day-card" id="D13">
+            <div class="day-header">
+                <span class="day-title">D13 高原圣湖与石头城</span>
+                <span class="day-date">10/30</span>
+            </div>
+            <div class="meta-tags">
+                <span>🚗 里程：150 km</span>
+                <span>🍱 餐饮：早</span>
+                <span>🏨 住宿：塔县</span>
+            </div>
+            <div class="route-path">📍 白沙江南岸 - 喀拉库勒湖 - 树洞公路 - 帕米尔湿地 - 石头城金草滩 - 塔县</div>
+            <div class="highlights">
+                <h4>📌 景点特色</h4>
+                <div class="highlight-item"><span class="spot-name">喀拉库勒湖：</span>倒映着“冰山之父”慕士塔格峰的高山冰蚀湖。</div>
+                <div class="highlight-item"><span class="spot-name">石头城与金草滩：</span>古丝绸之路上的重要遗址，秋季金草滩在夕阳下泛着金光，背景是连绵雪山。</div>
+            </div>
+        </div>
+
+        <div class="day-card" id="D14">
+            <div class="day-header">
+                <span class="day-title">D14 盘龙古道与冰川</span>
+                <span class="day-date">10/31</span>
+            </div>
+            <div class="meta-tags">
+                <span>🚗 里程：320 km</span>
+                <span>🍱 餐饮：早</span>
+                <span>🏨 住宿：喀什</span>
+            </div>
+            <div class="route-path">📍 塔县 - 盘龙古道 - 途观帕米尔之眼 - 慕士塔格冰川公园 - 喀什</div>
+            <div class="highlights">
+                <h4>📌 景点特色</h4>
+                <div class="highlight-item"><span class="spot-name">盘龙古道：</span>“今日走过了所有的弯路，从此人生尽是坦途”。数百个S弯令人震撼。</div>
+                <div class="highlight-item"><span class="spot-name">慕士塔格冰川公园：</span>近距离观赏壮丽的冰川裂缝与冰塔林。</div>
+            </div>
+        </div>
+
+        <div class="day-card" id="D15">
+            <div class="day-header">
+                <span class="day-title">D15 祖国最西端</span>
+                <span class="day-date">11/01</span>
+            </div>
+            <div class="meta-tags">
+                <span>🚗 里程：460 km</span>
+                <span>🍱 餐饮：早</span>
+                <span>🏨 住宿：客户自理</span>
+            </div>
+            <div class="route-path">📍 喀什 - 贝壳山 - 西极界碑 - 喀什</div>
+            <div class="highlights">
+                <h4>📌 景点特色</h4>
+                <div class="highlight-item"><span class="spot-name">西极界碑（乌恰）：</span>中国大陆最西端，送走祖国最后一缕晚霞的地方。</div>
+                <div class="highlight-item"><span class="spot-name">贝壳山：</span>沉积着古海洋生物化石的山体，沧海桑田的见证。</div>
+            </div>
+        </div>
+
+        <div class="day-card" id="D16">
+            <div class="day-header">
+                <span class="day-title">D16 顺利返程</span>
+                <span class="day-date">11/02</span>
+            </div>
+            <div class="meta-tags">
+                <span>🚗 里程：15 km</span>
+                <span>🍱 餐饮：早</span>
+                <span>🏨 住宿：无</span>
+            </div>
+            <div class="route-path">📍 喀什 - 散团 - 家乡</div>
+            <div class="highlights">
+                <h4>📌 提示</h4>
+                <div class="highlight-item">根据航班/火车时间前往机场/车站，结束愉快的南疆全景之旅！</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const days = document.querySelectorAll('.day-card');
+        const nav = document.getElementById('nav');
+
+        days.forEach(day => {
+            const id = day.id;
+            const date = day.querySelector('.day-date').innerText;
+            const link = document.createElement('a');
+            link.href = `#${id}`;
+            link.innerText = `${id} (${date})`;
+            nav.appendChild(link);
+        });
+    </script>
+</body>
+</html>
