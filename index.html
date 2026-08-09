@@ -174,6 +174,28 @@
             color: #111;
         }
 
+        .map-link {
+            display: inline-block;
+            font-size: 0.75rem;
+            padding: 1px 6px;
+            margin-left: 4px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        .map-baidu {
+            background-color: #e3f2fd;
+            color: #1976d2;
+            border: 1px solid #bbdefb;
+        }
+
+        .map-qq {
+            background-color: #e8f5e9;
+            color: #388e3c;
+            border: 1px solid #c8e6c9;
+        }
+
         .food-tag {
             background: #e8f5e9;
             color: #2e7d32;
@@ -238,9 +260,17 @@
                 <div class="route-path">📍 家 - 乌鲁木齐 - 乌鲁木齐市区自由活动</div>
                 <div class="highlights">
                     <h4>📌 今日特色、景致与餐饮建议</h4>
-                    <div class="highlight-item"><span class="spot-name">汗血宝马基地：</span>市区昆明路158号（新疆古生态园），观赏珍稀汗血宝马与古硅化木。</div>
-                    <div class="highlight-item"><span class="spot-name">红山公园：</span>日落时分俯瞰乌鲁木齐市区全景。</div>
-                    <div class="highlight-item"><span class="food-tag">餐饮推荐</span>和田二街（美食集聚区）、爸爸哈妮低糖烘焙、依娜娃娃儿牛肉面。</div>
+                    <div class="highlight-item">
+                        <span class="spot-name">汗血宝马基地（新疆古生态园）：</span>市区昆明路158号
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=乌鲁木齐市新疆古生态园&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=乌鲁木齐新疆古生态园&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="spot-name">红山公园：</span>日落俯瞰全景
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=乌鲁木齐红山公园&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=乌鲁木齐红山公园&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
+                    <div class="highlight-item"><span class="food-tag">餐饮推荐</span>和田二街、爸爸哈妮低糖烘焙（教委小区店）、依娜娃娃儿牛肉面。</div>
                 </div>
             </div>
         </div>
@@ -261,8 +291,16 @@
                 <div class="route-path">📍 新疆维吾尔自治区博物馆 - 国际大巴扎 - 市区自由活动</div>
                 <div class="highlights">
                     <h4>📌 今日特色与建议</h4>
-                    <div class="highlight-item"><span class="spot-name">新疆维吾尔自治区博物馆：</span>极其震撼的历史文化宝库，重点观赏“楼兰女尸”等干尸展厅与丝路珍宝。</div>
-                    <div class="highlight-item"><span class="spot-name">新疆国际大巴扎：</span>漫步西域特色巴扎，体验浓郁伊斯兰风情与采买干果。</div>
+                    <div class="highlight-item">
+                        <span class="spot-name">新疆维吾尔自治区博物馆：</span>重点观赏楼兰女尸展
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=新疆维吾尔自治区博物馆&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=新疆维吾尔自治区博物馆&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="spot-name">新疆国际大巴扎：</span>伊斯兰风情与采买干果
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=新疆国际大巴扎&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=新疆国际大巴扎&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -283,10 +321,25 @@
                 <div class="route-path">📍 乌鲁木齐 - 坎儿井 - 火焰山 - 吐峪沟麻扎村 - 交河故城 - 高昌故城 - 吐鲁番</div>
                 <div class="highlights">
                     <h4>📌 景点特色与夜市推荐</h4>
-                    <div class="highlight-item"><span class="spot-name">交河故城：</span>古老生土建筑城市遗址，傍晚看日落光影极其震撼。</div>
-                    <div class="highlight-item"><span class="spot-name">高昌故城 & 吐峪沟麻扎村：</span>吐鲁番古老黄土村落，极具摄影价值。</div>
-                    <div class="highlight-item"><span class="spot-name">坎儿井 & 火焰山：</span>地下水利工程奇迹与地表赤红地貌。</div>
-                    <div class="highlight-item"><span class="food-tag">夜市推荐</span>西游夜市（本地人首选）、福爱夜市。</div>
+                    <div class="highlight-item">
+                        <span class="spot-name">交河故城：</span>古生土建筑，傍晚看日落
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=吐鲁番交河故城&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=吐鲁番交河故城&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="spot-name">吐峪沟麻扎村：</span>黄土古村落
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=吐鲁番吐峪沟麻扎村&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=吐鲁番吐峪沟麻扎村&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="spot-name">火焰山景区：</span>
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=吐鲁番火焰山景区&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=吐鲁番火焰山景区&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="food-tag">夜市推荐</span>西游夜市（本地人首选）
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=吐鲁番西游夜市&output=html" target="_blank">🗺️ 百度导航</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -307,10 +360,20 @@
                 <div class="route-path">📍 库尔勒 - 铁门关 - 巴州博物馆 - 博斯腾湖 - 永安塔夜游</div>
                 <div class="highlights">
                     <h4>📌 景点特色与夜游推荐</h4>
-                    <div class="highlight-item"><span class="spot-name">巴州博物馆：</span>观赏著名的“楼兰美女”干尸展。</div>
-                    <div class="highlight-item"><span class="spot-name">永安塔：</span>建议夜游观赏金碧辉煌的灯光夜景。</div>
-                    <div class="highlight-item"><span class="spot-name">博斯腾湖 & 铁门关：</span>中国最大内陆淡水湖与天山隘口关隘。</div>
-                    <div class="highlight-item"><span class="food-tag">夜市推荐</span>梨城大巴扎、鸿雁夜市、阿瓦提乡木兰夜市。</div>
+                    <div class="highlight-item">
+                        <span class="spot-name">巴州博物馆：</span>楼兰美女干尸展
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=巴音郭楞蒙古自治州博物馆&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=巴音郭楞蒙古自治州博物馆&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="spot-name">博斯腾湖：</span>
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=博斯腾湖景区&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=博斯腾湖景区&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="spot-name">永安塔：</span>夜景灯光秀
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=库尔勒永安塔&output=html" target="_blank">🗺️ 百度导航</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -331,8 +394,16 @@
                 <div class="route-path">📍 库尔勒 - 罗布人村寨 - 葫芦岛胡杨景区 - 库尔勒</div>
                 <div class="highlights">
                     <h4>📌 景点特色</h4>
-                    <div class="highlight-item"><span class="spot-name">罗布人村寨：</span>沙漠、塔里木河与胡杨相映成趣。</div>
-                    <div class="highlight-item"><span class="spot-name">葫芦岛胡杨景区：</span>10月下旬正值水上金秋胡杨极佳大片创作期。</div>
+                    <div class="highlight-item">
+                        <span class="spot-name">罗布人村寨：</span>
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=罗布人村寨&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=罗布人村寨&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="spot-name">葫芦岛胡杨景区：</span>水上胡杨大片
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=尉犁县葫芦岛胡杨林景区&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=尉犁县葫芦岛胡杨林景区&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
                     <div class="notice">⚠️ 注：此日行程外籍游客不能参观。</div>
                 </div>
             </div>
@@ -354,9 +425,20 @@
                 <div class="route-path">📍 库尔勒 - 轮台胡杨林 - 库车老城巷子漫步 - 库车大寺 - 库车王府</div>
                 <div class="highlights">
                     <h4>📌 景点特色与老城精选巷子</h4>
-                    <div class="highlight-item"><span class="spot-name">轮台胡杨林：</span>乘小火车穿行于金黄色树海。</div>
-                    <div class="highlight-item"><span class="spot-name">库车老城人文漫步：</span>打卡热斯坦老街、花帽街、击鼓巷、清城巷、龟兹小巷、天空小巷、泥沙罕故居。</div>
-                    <div class="highlight-item"><span class="spot-name">库车大寺 & 库车王府：</span>伊斯兰风情古建筑与王府历史。</div>
+                    <div class="highlight-item">
+                        <span class="spot-name">轮台塔里木胡杨林公园：</span>
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=轮台塔里木胡杨林公园&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=轮台塔里木胡杨林公园&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="spot-name">库车老城漫步：</span>打卡热斯坦老街、花帽街、击鼓巷、清城巷、龟兹小巷、天空小巷
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=库车老城热斯坦街&output=html" target="_blank">🗺️ 百度导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="spot-name">库车王府：</span>
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=库车王府&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=库车王府&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -377,9 +459,16 @@
                 <div class="route-path">📍 库车 - 天山神秘大峡谷 - 烈焰泉 - 克孜尔千佛洞 - 苏巴什佛寺遗址 - 库车</div>
                 <div class="highlights">
                     <h4>📌 景点特色</h4>
-                    <div class="highlight-item"><span class="spot-name">天山神秘大峡谷：</span>红褐色悬崖峭壁，典型侵蚀丹霞风貌。</div>
-                    <div class="highlight-item"><span class="spot-name">克孜尔千佛洞：</span>古龟兹国石窟壁画艺术殿堂。</div>
-                    <div class="highlight-item"><span class="spot-name">苏巴什佛寺遗址：</span>千古古国佛寺遗址。</div>
+                    <div class="highlight-item">
+                        <span class="spot-name">天山神秘大峡谷：</span>
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=天山神秘大峡谷&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=天山神秘大峡谷&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="spot-name">克孜尔千佛洞：</span>
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=克孜尔千佛洞&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=克孜尔千佛洞&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -400,8 +489,20 @@
                 <div class="route-path">📍 库车 - 温宿大峡谷 - 阿拉尔 - 塔里木大学 - 359旅本质纪念馆 - 沙漠之门</div>
                 <div class="highlights">
                     <h4>📌 景点特色</h4>
-                    <div class="highlight-item"><span class="spot-name">温宿大峡谷：</span>峡谷之王，拥有远古岩盐巨型雅丹与丹霞集群。</div>
-                    <div class="highlight-item"><span class="spot-name">阿拉尔人文：</span>探访塔里木大学，三五九旅纪念馆与沙漠之门。</div>
+                    <div class="highlight-item">
+                        <span class="spot-name">温宿大峡谷：</span>峡谷之王
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=温宿大峡谷&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=温宿大峡谷&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="spot-name">三五九旅纪念馆：</span>
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=阿拉尔市三五九旅纪念馆&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=阿拉尔市三五九旅纪念馆&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="spot-name">沙漠之门景区：</span>
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=阿拉尔沙漠之门&output=html" target="_blank">🗺️ 百度导航</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -422,9 +523,20 @@
                 <div class="route-path">📍 阿拉尔 - 沙漠公路 - 翡翠湖 - 团城民街 - 约特干故城 - 和田夜市</div>
                 <div class="highlights">
                     <h4>📌 景点特色与美食</h4>
-                    <div class="highlight-item"><span class="spot-name">约特干故城：</span>古于阗国建筑风貌，极其精彩的夜景演艺。</div>
-                    <div class="highlight-item"><span class="spot-name">团城民街 & 和田风物：</span>充满南疆风采，了解和田玉、艾德莱斯绸文化。</div>
-                    <div class="highlight-item"><span class="food-tag">餐饮推荐</span>和田驿楼兰丝路餐厅、踏吉美蓝餐厅、和田夜市。</div>
+                    <div class="highlight-item">
+                        <span class="spot-name">约特干故城：</span>古于阗国夜景演艺
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=和田约特干故城&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=和田约特干故城&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="spot-name">和田团城：</span>
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=和田团城民街&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=和田团城民街&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="food-tag">美食推荐</span>和田夜市
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=和田夜市&output=html" target="_blank">🗺️ 百度导航</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -445,7 +557,15 @@
                 <div class="route-path">📍 和田 - 叶城0公里打卡处 - 莎车老城 - 喀尔羌汗王宫 - 阿曼尼沙汗纪念陵 - 玄奘讲经台</div>
                 <div class="highlights">
                     <h4>📌 景点特色</h4>
-                    <div class="highlight-item"><span class="spot-name">莎车非遗文化：</span>参观喀尔羌汗王宫、阿曼尼沙汗陵、玄奘讲经台，欣赏非遗《十二木卡姆》实景演出。</div>
+                    <div class="highlight-item">
+                        <span class="spot-name">新藏线0公里起点（叶城）：</span>
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=叶城零公里驾车起点&output=html" target="_blank">🗺️ 百度导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="spot-name">叶尔羌汗王宫（非遗木卡姆）：</span>
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=莎车叶尔羌汗王宫&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=莎车叶尔羌汗王宫&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -466,15 +586,27 @@
                 <div class="route-path">📍 莎车 - 阿图什天门 - 喀什古城漫步 - 高台民居 - 百年老茶馆</div>
                 <div class="highlights">
                     <h4>📌 景点特色与手写笔记①古城地标+11精选巷</h4>
-                    <div class="highlight-item"><span class="spot-name">喀什古城核心：</span>艾提尕尔清真寺、油画街、热斯坦街、百年老茶馆、高台民居。</div>
-                    <div class="highlight-item"><span class="spot-name">📷 手写笔记11条精选巷子：</span>
-                        <br>①彩虹巷 ②布袋巷 ③一粮情巷 ④浪漫巷 ⑤柱子巷 ⑥盖孜民共巷 ⑦巴格其巷 ⑧阿图什巷 ⑨塔哈共巷 ⑩磨坊巷 ⑪窗户街。
+                    <div class="highlight-item">
+                        <span class="spot-name">喀什古城景区：</span>
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=喀什古城景区&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=喀什古城景区&referer=trip" target="_blank">🗺️ 腾讯导航</a>
                     </div>
-                    <div class="highlight-item"><span class="food-tag">手写笔记③古城美食宝藏</span>
+                    <div class="highlight-item">
+                        <span class="spot-name">高台民居：</span>
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=喀什高台民居&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=喀什高台民居&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="spot-name">📷 古城 11 条网红巷：</span>彩虹巷、布袋巷、一粮情巷、浪漫巷、柱子巷、盖孜民共巷、巴格其巷、阿图什巷、塔哈共巷、磨坊巷、窗户街。
+                    </div>
+                    <div class="highlight-item"><span class="food-tag">手写笔记③古城美食宝藏导航</span>
                         <div class="food-list">
-                            • <b>玫客满拉美食城：</b>喀什市吐曼路75号古城集宿10号楼<br>
-                            • <b>包无界（双包子）：</b>西域大道南门大门旁<br>
+                            • <b>玫客满拉美食城：</b>喀什市吐曼路75号古城集宿10号楼
+                            <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=喀什市吐曼路75号&output=html" target="_blank">🗺️ 百度</a><br>
+                            • <b>包无界（双包子）：</b>西域大道南门大门旁
+                            <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=喀什包无界&output=html" target="_blank">🗺️ 百度</a><br>
                             • <b>马氏案板牛蹄：</b>吐曼路6号B1栋（你好酒店右侧）
+                            <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=喀什市吐曼路6号&output=html" target="_blank">🗺️ 百度</a>
                         </div>
                     </div>
                 </div>
@@ -497,8 +629,15 @@
                 <div class="route-path">📍 喀什 - 白沙湖北岸 - 十八罗汉峰 - 木吉火山口 - 白沙湖住宿</div>
                 <div class="highlights">
                     <h4>📌 景点特色</h4>
-                    <div class="highlight-item"><span class="spot-name">白沙湖：</span>一半冰蓝湖水，一半白色沙山，仙境风光。</div>
-                    <div class="highlight-item"><span class="spot-name">木吉火山口：</span>“帕米尔之眼”，遥望公格尔九别峰。</div>
+                    <div class="highlight-item">
+                        <span class="spot-name">帕米尔白沙湖景区：</span>
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=克州阿克陶县白沙湖景区&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=阿克陶白沙湖景区&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="spot-name">木吉火山口：</span>帕米尔之眼
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=阿克陶县木吉火山口&output=html" target="_blank">🗺️ 百度导航</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -519,8 +658,16 @@
                 <div class="route-path">📍 白沙江南岸 - 喀拉库勒湖 - 树洞公路 - 帕米尔湿地 - 石头城金草滩 - 塔县</div>
                 <div class="highlights">
                     <h4>📌 景点特色</h4>
-                    <div class="highlight-item"><span class="spot-name">喀拉库勒湖：</span>倒映着“冰山之父”慕士塔格峰。</div>
-                    <div class="highlight-item"><span class="spot-name">石头城与金草滩：</span>夕阳下金色湿地与雪山同框。</div>
+                    <div class="highlight-item">
+                        <span class="spot-name">喀拉库勒湖：</span>倒映慕士塔格峰
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=喀拉库勒湖景区&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=喀拉库勒湖景区&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="spot-name">石头城金草滩景区：</span>
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=塔什库尔干石头城景区&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=塔什库尔干石头城景区&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -541,12 +688,21 @@
                 <div class="route-path">📍 塔县 - 盘龙古道 - 途观帕米尔之眼 - 慕士塔格冰川公园 - 喀什</div>
                 <div class="highlights">
                     <h4>📌 景点特色与晚间美餐</h4>
-                    <div class="highlight-item"><span class="spot-name">盘龙古道：</span>“走过了所有的弯路，从此人生尽是坦途”。</div>
-                    <div class="highlight-item"><span class="spot-name">慕士塔格冰川公园：</span>近距离触碰冰川与冰塔林。</div>
-                    <div class="highlight-item"><span class="food-tag">手写笔记①&③推荐晚餐</span>
+                    <div class="highlight-item">
+                        <span class="spot-name">盘龙古道起点：</span>弯道奇观
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=盘龙古道入口&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=盘龙古道&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="spot-name">慕士塔格冰川公园：</span>
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=慕士塔格冰川公园&output=html" target="_blank">🗺️ 百度导航</a>
+                    </div>
+                    <div class="highlight-item"><span class="food-tag">手写笔记①&③推荐晚餐导航</span>
                         <div class="food-list">
-                            • <b>踏吉美蓝美食宫：</b>喀什市阿热亚路夏米其委员会4组48号<br>
-                            • <b>努尔噢美泉宫：</b>夏马勒巴格镇2村天江南路100号城投绿城玉园小区6号楼2层2004商铺
+                            • <b>踏吉美蓝美食宫：</b>喀什市阿热亚路夏米其委员会4组48号
+                            <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=喀什市阿热亚路&output=html" target="_blank">🗺️ 百度</a><br>
+                            • <b>努尔噢美泉宫：</b>喀什市夏马勒巴格镇天江南路100号
+                            <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=喀什市天江南路100号&output=html" target="_blank">🗺️ 百度</a>
                         </div>
                     </div>
                 </div>
@@ -569,12 +725,21 @@
                 <div class="route-path">📍 喀什 - 贝壳山 - 西极界碑 - 喀什博物馆 - 香妃园 - 牛羊大巴扎 - 汉巴扎 - 跨仕大观园 - 商业步行街</div>
                 <div class="highlights">
                     <h4>📌 景点特色与手写笔记完整打卡列表</h4>
-                    <div class="highlight-item"><span class="spot-name">西极界碑：</span>中国大陆最西端，追赶最后一缕晚霞。</div>
-                    <div class="highlight-item"><span class="spot-name">喀什文化地标：</span>喀什博物馆、香妃园、牛羊大巴扎、汉巴扎。</div>
-                    <div class="highlight-item"><span class="spot-name">手写笔记地标打卡：</span>
-                        <br>• <b>喀什夸仕大观园：</b>喀什市乃则尔巴格镇迎宾大道668号
-                        <br>• <b>喀什商业步行街：</b>古域老家5厅
-                        <br>• <b>月星上海城：</b>喀什西域大道198号
+                    <div class="highlight-item">
+                        <span class="spot-name">西极塔界碑（乌恰）：</span>祖国最西端
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=乌恰县西极塔&output=html" target="_blank">🗺️ 百度导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="spot-name">香妃园：</span>
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=喀什香妃园&output=html" target="_blank">🗺️ 百度导航</a>
+                        <a class="map-link map-qq" href="https://apis.map.qq.com/uri/v1/search?keyword=喀什香妃园&referer=trip" target="_blank">🗺️ 腾讯导航</a>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="spot-name">手写笔记地标导航：</span>
+                        <br>• <b>喀什夸仕大观园：</b>乃则尔巴格镇迎宾大道668号
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=喀什市迎宾大道668号&output=html" target="_blank">🗺️ 百度导航</a>
+                        <br>• <b>月星上海城：</b>西域大道198号
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=喀什西域大道198号&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                 </div>
             </div>
