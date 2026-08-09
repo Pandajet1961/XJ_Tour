@@ -85,11 +85,23 @@
         .day-card {
             background: var(--card-bg);
             border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            padding: 0 0 20px 0;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            overflow: hidden;
             border-left: 5px solid var(--primary-color);
             scroll-margin-top: 60px;
+        }
+
+        .spot-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 20px;
         }
 
         .day-header {
@@ -125,11 +137,6 @@
             background: #f8f9fa;
             padding: 8px 12px;
             border-radius: 6px;
-        }
-
-        .meta-tags span {
-            display: flex;
-            align-items: center;
         }
 
         .route-path {
@@ -189,6 +196,9 @@
                 flex-direction: column;
                 gap: 4px;
             }
+            .spot-img {
+                height: 180px;
+            }
         }
     </style>
 </head>
@@ -196,7 +206,7 @@
 
     <header>
         <h1>新疆南疆秋季全景 16日游</h1>
-        <p>行程手册 & 景点美食风光全指南 (10.18 - 11.02)</p>
+        <p>行程手册 & 景点风光影像指南 (10.18 - 11.02)</p>
     </header>
 
     <div class="nav-scroller" id="nav"></div>
@@ -205,322 +215,360 @@
 
         <!-- D1 -->
         <div class="day-card" id="D1">
-            <div class="day-header">
-                <span class="day-title">D1 集合作业</span>
-                <span class="day-date">10/18</span>
-            </div>
-            <div class="meta-tags">
-                <span>🚗 里程：20 km</span>
-                <span>🍱 餐饮：无</span>
-                <span>🏨 住宿：乌鲁木齐</span>
-            </div>
-            <div class="route-path">📍 家 - 乌鲁木齐 - 乌鲁木齐市区自由活动</div>
-            <div class="highlights">
-                <h4>📌 今日特色、景致与餐饮建议</h4>
-                <div class="highlight-item"><span class="spot-name">汗血宝马基地：</span>市区昆明路158号（新疆古生态园），近距离观赏珍稀汗血宝马与古硅化木。</div>
-                <div class="highlight-item"><span class="spot-name">红山公园：</span>建议日落时分游览，俯瞰乌鲁木齐市区全景与落日美景。</div>
-                <div class="highlight-item"><span class="food-tag">餐饮推荐</span>和田二街（美食集聚区）、爸爸哈妮低糖烘焙（教委小区店）、依娜娃娃儿牛肉面/鲜骨数汤（金阳小区店）。</div>
+            <img class="spot-img" src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1000&q=80" alt="乌鲁木齐">
+            <div class="card-content">
+                <div class="day-header">
+                    <span class="day-title">D1 集合作业</span>
+                    <span class="day-date">10/18</span>
+                </div>
+                <div class="meta-tags">
+                    <span>🚗 里程：20 km</span>
+                    <span>🍱 餐饮：无</span>
+                    <span>🏨 住宿：乌鲁木齐</span>
+                </div>
+                <div class="route-path">📍 家 - 乌鲁木齐 - 乌鲁木齐市区自由活动</div>
+                <div class="highlights">
+                    <h4>📌 今日特色、景致与餐饮建议</h4>
+                    <div class="highlight-item"><span class="spot-name">汗血宝马基地：</span>市区昆明路158号（新疆古生态园），观赏珍稀汗血宝马与古硅化木。</div>
+                    <div class="highlight-item"><span class="spot-name">红山公园：</span>日落时分俯瞰乌鲁木齐市区全景。</div>
+                    <div class="highlight-item"><span class="food-tag">餐饮推荐</span>和田二街（美食集聚区）、爸爸哈妮低糖烘焙、依娜娃娃儿牛肉面。</div>
+                </div>
             </div>
         </div>
 
         <!-- D2 -->
         <div class="day-card" id="D2">
-            <div class="day-header">
-                <span class="day-title">D2 乌市人文深入游</span>
-                <span class="day-date">10/19</span>
-            </div>
-            <div class="meta-tags">
-                <span>🚗 里程：0 km</span>
-                <span>🍱 餐饮：早</span>
-                <span>🏨 住宿：乌鲁木齐</span>
-            </div>
-            <div class="route-path">📍 新疆维吾尔自治区博物馆 - 国际大巴扎 - 市区自由活动</div>
-            <div class="highlights">
-                <h4>📌 今日特色与建议</h4>
-                <div class="highlight-item"><span class="spot-name">新疆维吾尔自治区博物馆：</span>极其震撼的历史文化宝库，重点观赏“楼兰女尸”等干尸展厅与丝绸之路出土文物（需提前预约，20日离开前务必参观）。</div>
-                <div class="highlight-item"><span class="spot-name">新疆国际大巴扎：</span>离入住酒店近，可自由漫步，体验浓郁伊斯兰风情，采买精美手工艺品与干果。</div>
+            <img class="spot-img" src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1000&q=80" alt="新疆国际大巴扎">
+            <div class="card-content">
+                <div class="day-header">
+                    <span class="day-title">D2 乌市人文深入游</span>
+                    <span class="day-date">10/19</span>
+                </div>
+                <div class="meta-tags">
+                    <span>🚗 里程：0 km</span>
+                    <span>🍱 餐饮：早</span>
+                    <span>🏨 住宿：乌鲁木齐</span>
+                </div>
+                <div class="route-path">📍 新疆维吾尔自治区博物馆 - 国际大巴扎 - 市区自由活动</div>
+                <div class="highlights">
+                    <h4>📌 今日特色与建议</h4>
+                    <div class="highlight-item"><span class="spot-name">新疆维吾尔自治区博物馆：</span>极其震撼的历史文化宝库，重点观赏“楼兰女尸”等干尸展厅与丝路珍宝。</div>
+                    <div class="highlight-item"><span class="spot-name">新疆国际大巴扎：</span>漫步西域特色巴扎，体验浓郁伊斯兰风情与采买干果。</div>
+                </div>
             </div>
         </div>
 
         <!-- D3 -->
         <div class="day-card" id="D3">
-            <div class="day-header">
-                <span class="day-title">D3 吐鲁番风情与古城日落</span>
-                <span class="day-date">10/20</span>
-            </div>
-            <div class="meta-tags">
-                <span>🚗 里程：200 km</span>
-                <span>🍱 餐饮：早</span>
-                <span>🏨 住宿：吐鲁番</span>
-            </div>
-            <div class="route-path">📍 乌鲁木齐 - 坎儿井 - 火焰山 - 吐峪沟麻扎村 - 交河故城 - 高昌故城 - 吐鲁番</div>
-            <div class="highlights">
-                <h4>📌 景点特色与夜市推荐</h4>
-                <div class="highlight-item"><span class="spot-name">交河故城：</span>世界上最大最古老、保存最完好的生土建筑城市，特别推荐在<b>傍晚时分看日落</b>，光影绝美。</div>
-                <div class="highlight-item"><span class="spot-name">高昌故城 & 吐峪沟麻扎村：</span>古丝路要冲，古老维吾尔族黄土建筑群，极其出片。</div>
-                <div class="highlight-item"><span class="spot-name">坎儿井 & 火焰山：</span>荒漠地下水利工程奇迹与《西游记》文化地标。</div>
-                <div class="highlight-item"><span class="food-tag">夜市推荐</span>福爱夜市、星光夜市；当地人强烈推荐去<b>西游夜市</b>体验地道美食。</div>
+            <img class="spot-img" src="https://images.unsplash.com/photo-1627882242878-36b0433285cf?auto=format&fit=crop&w=1000&q=80" alt="吐鲁番火焰山与交河故城">
+            <div class="card-content">
+                <div class="day-header">
+                    <span class="day-title">D3 吐鲁番风情与古城日落</span>
+                    <span class="day-date">10/20</span>
+                </div>
+                <div class="meta-tags">
+                    <span>🚗 里程：200 km</span>
+                    <span>🍱 餐饮：早</span>
+                    <span>🏨 住宿：吐鲁番</span>
+                </div>
+                <div class="route-path">📍 乌鲁木齐 - 坎儿井 - 火焰山 - 吐峪沟麻扎村 - 交河故城 - 高昌故城 - 吐鲁番</div>
+                <div class="highlights">
+                    <h4>📌 景点特色与夜市推荐</h4>
+                    <div class="highlight-item"><span class="spot-name">交河故城：</span>古老生土建筑城市遗址，傍晚看日落光影极其震撼。</div>
+                    <div class="highlight-item"><span class="spot-name">高昌故城 & 吐峪沟麻扎村：</span>吐鲁番古老黄土村落，极具摄影价值。</div>
+                    <div class="highlight-item"><span class="spot-name">坎儿井 & 火焰山：</span>地下水利工程奇迹与地表赤红地貌。</div>
+                    <div class="highlight-item"><span class="food-tag">夜市推荐</span>西游夜市（本地人首选）、福爱夜市。</div>
+                </div>
             </div>
         </div>
 
         <!-- D4 -->
         <div class="day-card" id="D4">
-            <div class="day-header">
-                <span class="day-title">D4 走进南疆 gateway</span>
-                <span class="day-date">10/21</span>
-            </div>
-            <div class="meta-tags">
-                <span>🚗 里程：150 km</span>
-                <span>🍱 餐饮：早</span>
-                <span>🏨 住宿：库尔勒</span>
-            </div>
-            <div class="route-path">📍 库尔勒 - 铁门关 - 巴州博物馆 - 博斯腾湖 - 永安塔夜游</div>
-            <div class="highlights">
-                <h4>📌 景点特色与夜游推荐</h4>
-                <div class="highlight-item"><span class="spot-name">巴州博物馆：</span>馆藏丰富，重点观赏著名的<b>“楼兰美女”</b>干尸与巴州历史文物。</div>
-                <div class="highlight-item"><span class="spot-name">永安塔：</span>库尔勒城市地标，建议夜游，灯光夜景极其辉煌。</div>
-                <div class="highlight-item"><span class="spot-name">博斯腾湖 & 铁门关：</span>内陆最大淡水湖秋色与古丝路险要关隘。</div>
-                <div class="highlight-item"><span class="food-tag">三大夜市推荐</span>梨城大巴扎、鸿雁夜市、阿瓦提乡木兰夜市。</div>
+            <img class="spot-img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80" alt="博斯腾湖">
+            <div class="card-content">
+                <div class="day-header">
+                    <span class="day-title">D4 走进南疆 gateway</span>
+                    <span class="day-date">10/21</span>
+                </div>
+                <div class="meta-tags">
+                    <span>🚗 里程：150 km</span>
+                    <span>🍱 餐饮：早</span>
+                    <span>🏨 住宿：库尔勒</span>
+                </div>
+                <div class="route-path">📍 库尔勒 - 铁门关 - 巴州博物馆 - 博斯腾湖 - 永安塔夜游</div>
+                <div class="highlights">
+                    <h4>📌 景点特色与夜游推荐</h4>
+                    <div class="highlight-item"><span class="spot-name">巴州博物馆：</span>观赏著名的“楼兰美女”干尸展。</div>
+                    <div class="highlight-item"><span class="spot-name">永安塔：</span>建议夜游观赏金碧辉煌的灯光夜景。</div>
+                    <div class="highlight-item"><span class="spot-name">博斯腾湖 & 铁门关：</span>中国最大内陆淡水湖与天山隘口关隘。</div>
+                    <div class="highlight-item"><span class="food-tag">夜市推荐</span>梨城大巴扎、鸿雁夜市、阿瓦提乡木兰夜市。</div>
+                </div>
             </div>
         </div>
 
         <!-- D5 -->
         <div class="day-card" id="D5">
-            <div class="day-header">
-                <span class="day-title">D5 胡杨林秘境</span>
-                <span class="day-date">10/22</span>
-            </div>
-            <div class="meta-tags">
-                <span>🚗 里程：380 km</span>
-                <span>🍱 餐饮：早</span>
-                <span>🏨 住宿：库尔勒</span>
-            </div>
-            <div class="route-path">📍 库尔勒 - 罗布人村寨 - 葫芦岛胡杨景区 - 库尔勒</div>
-            <div class="highlights">
-                <h4>📌 景点特色</h4>
-                <div class="highlight-item"><span class="spot-name">罗布人村寨：</span>沙漠、塔里木河、胡杨林与罗布人原始文化相结合。</div>
-                <div class="highlight-item"><span class="spot-name">葫芦岛胡杨景区：</span>水上胡杨与金色沙丘，秋季胡杨最佳摄影点。</div>
-                <div class="notice">⚠️ 注：此日行程外籍游客不能参观。</div>
+            <img class="spot-img" src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1000&q=80" alt="金秋胡杨林与沙漠">
+            <div class="card-content">
+                <div class="day-header">
+                    <span class="day-title">D5 胡杨林秘境</span>
+                    <span class="day-date">10/22</span>
+                </div>
+                <div class="meta-tags">
+                    <span>🚗 里程：380 km</span>
+                    <span>🍱 餐饮：早</span>
+                    <span>🏨 住宿：库尔勒</span>
+                </div>
+                <div class="route-path">📍 库尔勒 - 罗布人村寨 - 葫芦岛胡杨景区 - 库尔勒</div>
+                <div class="highlights">
+                    <h4>📌 景点特色</h4>
+                    <div class="highlight-item"><span class="spot-name">罗布人村寨：</span>沙漠、塔里木河与胡杨相映成趣。</div>
+                    <div class="highlight-item"><span class="spot-name">葫芦岛胡杨景区：</span>10月下旬正值水上金秋胡杨极佳大片创作期。</div>
+                    <div class="notice">⚠️ 注：此日行程外籍游客不能参观。</div>
+                </div>
             </div>
         </div>
 
         <!-- D6 -->
         <div class="day-card" id="D6">
-            <div class="day-header">
-                <span class="day-title">D6 塔里木金色廊道与龟兹老城</span>
-                <span class="day-date">10/23</span>
-            </div>
-            <div class="meta-tags">
-                <span>🚗 里程：340 km</span>
-                <span>🍱 餐饮：早</span>
-                <span>🏨 住宿：库车</span>
-            </div>
-            <div class="route-path">📍 库尔勒 - 轮台胡杨林 - 库车老城巷子漫步 - 库车大寺 - 库车王府</div>
-            <div class="highlights">
-                <h4>📌 景点特色与老城精选巷子</h4>
-                <div class="highlight-item"><span class="spot-name">轮台胡杨林：</span>世界最大原始胡杨林，可乘观光小火车穿行于金黄色树海。</div>
-                <div class="highlight-item"><span class="spot-name">库车老城人文深度游：</span>打卡<b>热斯坦老街、花帽街、击鼓巷、清城巷、龟兹小巷、天空小巷、泥沙罕故居</b>，体验原汁原味的大库车老城风貌。</div>
-                <div class="highlight-item"><span class="spot-name">库车大寺 & 库车王府：</span>伊斯兰建筑艺术与历史王府典范。</div>
+            <img class="spot-img" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80" alt="轮台胡杨林">
+            <div class="card-content">
+                <div class="day-header">
+                    <span class="day-title">D6 塔里木金色廊道与龟兹老城</span>
+                    <span class="day-date">10/23</span>
+                </div>
+                <div class="meta-tags">
+                    <span>🚗 里程：340 km</span>
+                    <span>🍱 餐饮：早</span>
+                    <span>🏨 住宿：库车</span>
+                </div>
+                <div class="route-path">📍 库尔勒 - 轮台胡杨林 - 库车老城巷子漫步 - 库车大寺 - 库车王府</div>
+                <div class="highlights">
+                    <h4>📌 景点特色与老城精选巷子</h4>
+                    <div class="highlight-item"><span class="spot-name">轮台胡杨林：</span>乘小火车穿行于金黄色树海。</div>
+                    <div class="highlight-item"><span class="spot-name">库车老城人文漫步：</span>打卡热斯坦老街、花帽街、击鼓巷、清城巷、龟兹小巷、天空小巷。</div>
+                    <div class="highlight-item"><span class="spot-name">库车大寺 & 库车王府：</span>伊斯兰风情古建筑与王府历史。</div>
+                </div>
             </div>
         </div>
 
         <!-- D7 -->
         <div class="day-card" id="D7">
-            <div class="day-header">
-                <span class="day-title">D7 地质奇观与石窟</span>
-                <span class="day-date">10/24</span>
-            </div>
-            <div class="meta-tags">
-                <span>🚗 里程：200 km</span>
-                <span>🍱 餐饮：早</span>
-                <span>🏨 住宿：库车</span>
-            </div>
-            <div class="route-path">📍 库车 - 天山神秘大峡谷 - 烈焰泉 - 克孜尔千佛洞 - 苏巴什佛寺遗址 - 库车</div>
-            <div class="highlights">
-                <h4>📌 景点特色</h4>
-                <div class="highlight-item"><span class="spot-name">天山神秘大峡谷：</span>红褐色丹霞与峡谷地貌，阳光照射下极为震撼。</div>
-                <div class="highlight-item"><span class="spot-name">克孜尔千佛洞：</span>比莫高窟历史更悠久的龟兹石窟艺术宝库。</div>
-                <div class="highlight-item"><span class="spot-name">苏巴什佛寺遗址：</span>古龟兹国最大佛寺遗址，玄奘法师讲经之地。</div>
+            <img class="spot-img" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1000&q=80" alt="天山神秘大峡谷">
+            <div class="card-content">
+                <div class="day-header">
+                    <span class="day-title">D7 地质奇观与石窟</span>
+                    <span class="day-date">10/24</span>
+                </div>
+                <div class="meta-tags">
+                    <span>🚗 里程：200 km</span>
+                    <span>🍱 餐饮：早</span>
+                    <span>🏨 住宿：库车</span>
+                </div>
+                <div class="route-path">📍 库车 - 天山神秘大峡谷 - 烈焰泉 - 克孜尔千佛洞 - 苏巴什佛寺遗址 - 库车</div>
+                <div class="highlights">
+                    <h4>📌 景点特色</h4>
+                    <div class="highlight-item"><span class="spot-name">天山神秘大峡谷：</span>红褐色悬崖峭壁，典型侵蚀丹霞风貌。</div>
+                    <div class="highlight-item"><span class="spot-name">克孜尔千佛洞：</span>古龟兹国石窟壁画艺术殿堂。</div>
+                    <div class="highlight-item"><span class="spot-name">苏巴什佛寺遗址：</span>千古古国佛寺遗址。</div>
+                </div>
             </div>
         </div>
 
         <!-- D8 -->
         <div class="day-card" id="D8">
-            <div class="day-header">
-                <span class="day-title">D8 壮美大峡谷与兵团记忆</span>
-                <span class="day-date">10/25</span>
-            </div>
-            <div class="meta-tags">
-                <span>🚗 里程：350 km</span>
-                <span>🍱 餐饮：早</span>
-                <span>🏨 住宿：阿拉尔</span>
-            </div>
-            <div class="route-path">📍 库车 - 温宿大峡谷 - 阿拉尔 - 塔里木大学 - 359旅三五九旅本质纪念馆 - 沙漠之门</div>
-            <div class="highlights">
-                <h4>📌 景点特色</h4>
-                <div class="highlight-item"><span class="spot-name">温宿大峡谷：</span>峡谷之王，拥具有巨型丹霞、雅丹与远古岩盐地质绝景。</div>
-                <div class="highlight-item"><span class="spot-name">阿拉尔人文：</span>探访<b>塔里木大学</b>，参观<b>三五九旅纪念馆</b>（了解屯垦戍边光辉历史），打卡<b>沙漠之门（塔克拉玛干沙漠之门）</b>。</div>
+            <img class="spot-img" src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1000&q=80" alt="温宿大峡谷">
+            <div class="card-content">
+                <div class="day-header">
+                    <span class="day-title">D8 壮美大峡谷与兵团记忆</span>
+                    <span class="day-date">10/25</span>
+                </div>
+                <div class="meta-tags">
+                    <span>🚗 里程：350 km</span>
+                    <span>🍱 餐饮：早</span>
+                    <span>🏨 住宿：阿拉尔</span>
+                </div>
+                <div class="route-path">📍 库车 - 温宿大峡谷 - 阿拉尔 - 塔里木大学 - 359旅本质纪念馆 - 沙漠之门</div>
+                <div class="highlights">
+                    <h4>📌 景点特色</h4>
+                    <div class="highlight-item"><span class="spot-name">温宿大峡谷：</span>峡谷之王，拥有远古岩盐巨型雅丹与丹霞集群。</div>
+                    <div class="highlight-item"><span class="spot-name">阿拉尔人文：</span>探访塔里木大学，三五九旅纪念馆与沙漠之门。</div>
+                </div>
             </div>
         </div>
 
         <!-- D9 -->
         <div class="day-card" id="D9">
-            <div class="day-header">
-                <span class="day-title">D9 穿沙公路与和田人文美景</span>
-                <span class="day-date">10/26</span>
-            </div>
-            <div class="meta-tags">
-                <span>🚗 里程：460 km</span>
-                <span>🍱 餐饮：早</span>
-                <span>🏨 住宿：和田</span>
-            </div>
-            <div class="route-path">📍 阿拉尔 - 沙漠公路 - 翡翠湖 - 团城民街 - 约特干故城 - 和田夜市</div>
-            <div class="highlights">
-                <h4>📌 景点特色、特产与餐饮</h4>
-                <div class="highlight-item"><span class="spot-name">约特干故城：</span>极具视觉冲击力的古于阗国建筑风貌，夜景与演艺十分惊艳。</div>
-                <div class="highlight-item"><span class="spot-name">团城民街 & 和田风物：</span>充满南疆民俗色彩的特色街区，了解<b>和田玉石、核桃王树、艾德莱斯绸、尼雅遗址</b>的历史文化。</div>
-                <div class="highlight-item"><span class="food-tag">餐饮推荐</span><b>和田驿楼兰丝路餐厅</b>、<b>踏吉美蓝餐厅</b>、<b>和田夜市</b>（必吃烤蛋、羊包子）。</div>
+            <img class="spot-img" src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1000&q=80" alt="塔克拉玛干沙漠">
+            <div class="card-content">
+                <div class="day-header">
+                    <span class="day-title">D9 穿沙公路与和田人文美景</span>
+                    <span class="day-date">10/26</span>
+                </div>
+                <div class="meta-tags">
+                    <span>🚗 里程：460 km</span>
+                    <span>🍱 餐饮：早</span>
+                    <span>🏨 住宿：和田</span>
+                </div>
+                <div class="route-path">📍 阿拉尔 - 沙漠公路 - 翡翠湖 - 团城民街 - 约特干故城 - 和田夜市</div>
+                <div class="highlights">
+                    <h4>📌 景点特色与美食</h4>
+                    <div class="highlight-item"><span class="spot-name">约特干故城：</span>古于阗国建筑风貌，极其精彩的夜景演艺。</div>
+                    <div class="highlight-item"><span class="spot-name">团城民街 & 和田风物：</span>充满南疆风采，了解和田玉、艾德莱斯绸文化。</div>
+                    <div class="highlight-item"><span class="food-tag">餐饮推荐</span>和田驿楼兰丝路餐厅、踏吉美蓝餐厅、和田夜市。</div>
+                </div>
             </div>
         </div>
 
         <!-- D10 -->
         <div class="day-card" id="D10">
-            <div class="day-header">
-                <span class="day-title">D10 昆仑起点与莎车非遗</span>
-                <span class="day-date">10/27</span>
-            </div>
-            <div class="meta-tags">
-                <span>🚗 里程：350 km</span>
-                <span>🍱 餐饮：早</span>
-                <span>🏨 住宿：莎车</span>
-            </div>
-            <div class="route-path">📍 和田 - 叶城0公里打卡处 - 莎车老城 - 喀尔羌汗王宫 - 阿曼尼沙汗纪念陵 - 玄奘讲经台</div>
-            <div class="highlights">
-                <h4>📌 景点特色</h4>
-                <div class="highlight-item"><span class="spot-name">新藏线0公里：</span>叶城“天路零公里”地标打卡。</div>
-                <div class="highlight-item"><span class="spot-name">莎车古城与非遗人文：</span>参观<b>喀尔羌汗王宫（叶尔羌汗王宫）</b>、<b>阿曼尼沙汗纪念陵/喀尔羌汗王陵</b>、<b>老城墙遗址</b>、<b>玄奘讲经台</b>，欣赏古典音乐非遗<b>《十二木卡姆》</b>实景演出。</div>
+            <img class="spot-img" src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1000&q=80" alt="莎车老城">
+            <div class="card-content">
+                <div class="day-header">
+                    <span class="day-title">D10 昆仑起点与莎车非遗</span>
+                    <span class="day-date">10/27</span>
+                </div>
+                <div class="meta-tags">
+                    <span>🚗 里程：350 km</span>
+                    <span>🍱 餐饮：早</span>
+                    <span>🏨 住宿：莎车</span>
+                </div>
+                <div class="route-path">📍 和田 - 叶城0公里打卡处 - 莎车老城 - 喀尔羌汗王宫 - 阿曼尼沙汗纪念陵 - 玄奘讲经台</div>
+                <div class="highlights">
+                    <h4>📌 景点特色</h4>
+                    <div class="highlight-item"><span class="spot-name">莎车非遗文化：</span>参观喀尔羌汗王宫、阿曼尼沙汗陵、玄奘讲经台，欣赏非遗《十二木卡姆》实景演出。</div>
+                </div>
             </div>
         </div>
 
         <!-- D11 -->
         <div class="day-card" id="D11">
-            <div class="day-header">
-                <span class="day-title">D11 天门与喀什古城巷子深度游</span>
-                <span class="day-date">10/28</span>
-            </div>
-            <div class="meta-tags">
-                <span>🚗 里程：300 km</span>
-                <span>🍱 餐饮：早</span>
-                <span>🏨 住宿：喀什</span>
-            </div>
-            <div class="route-path">📍 莎车 - 阿图什天门 - 喀什古城深度漫步 - 高台民居</div>
-            <div class="highlights">
-                <h4>📌 景点特色与古城精选11巷</h4>
-                <div class="highlight-item"><span class="spot-name">阿图什天门：</span>高达数百米的天然石拱门，高山壮景。</div>
-                <div class="highlight-item"><span class="spot-name">喀什古城 & 高台民居：</span>打卡<b>艾提尕尔清真寺、油画街、热斯坦街、百年老茶馆</b>。</div>
-                <div class="highlight-item"><span class="spot-name">📷 古城精选11条网红巷子：</span>①彩虹巷 ②布袋巷 ③一粮情巷 ④浪漫巷 ⑤柱子巷 ⑥盖孜民共巷 ⑦巴格其巷 ⑧阿图什巷 ⑨塔哈共巷 ⑩磨坊巷 ⑪窗户街。</div>
+            <img class="spot-img" src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1000&q=80" alt="喀什古城">
+            <div class="card-content">
+                <div class="day-header">
+                    <span class="day-title">D11 天门与喀什古城巷子深度游</span>
+                    <span class="day-date">10/28</span>
+                </div>
+                <div class="meta-tags">
+                    <span>🚗 里程：300 km</span>
+                    <span>🍱 餐饮：早</span>
+                    <span>🏨 住宿：喀什</span>
+                </div>
+                <div class="route-path">📍 莎车 - 阿图什天门 - 喀什古城深度漫步 - 高台民居</div>
+                <div class="highlights">
+                    <h4>📌 景点特色与古城精选11巷</h4>
+                    <div class="highlight-item"><span class="spot-name">喀什古城 & 高台民居：</span>艾提尕尔清真寺、油画街、热斯坦街、百年老茶馆。</div>
+                    <div class="highlight-item"><span class="spot-name">📷 古城网红精选11巷：</span>彩虹巷、布袋巷、一粮情巷、浪漫巷、柱子巷、盖孜民共巷、巴格其巷、阿图什巷、塔哈共巷、磨坊巷、窗户街。</div>
+                </div>
             </div>
         </div>
 
         <!-- D12 -->
         <div class="day-card" id="D12">
-            <div class="day-header">
-                <span class="day-title">D12 登上帕米尔高原</span>
-                <span class="day-date">10/29</span>
-            </div>
-            <div class="meta-tags">
-                <span>🚗 里程：300 km</span>
-                <span>🍱 餐饮：早</span>
-                <span>🏨 住宿：白沙湖酒店</span>
-            </div>
-            <div class="route-path">📍 喀什 - 白沙湖北岸 - 十八罗汉峰 - 木吉火山口 - 白沙湖住宿</div>
-            <div class="highlights">
-                <h4>📌 景点特色</h4>
-                <div class="highlight-item"><span class="spot-name">白沙湖：</span>一半冰蓝湖水，一半白色沙山。</div>
-                <div class="highlight-item"><span class="spot-name">木吉火山口：</span>“帕米尔之眼”，高原火山眼与多色矿泉湿地。</div>
+            <img class="spot-img" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80" alt="白沙湖与雪山">
+            <div class="card-content">
+                <div class="day-header">
+                    <span class="day-title">D12 登上帕米尔高原</span>
+                    <span class="day-date">10/29</span>
+                </div>
+                <div class="meta-tags">
+                    <span>🚗 里程：300 km</span>
+                    <span>🍱 餐饮：早</span>
+                    <span>🏨 住宿：白沙湖酒店</span>
+                </div>
+                <div class="route-path">📍 喀什 - 白沙湖北岸 - 十八罗汉峰 - 木吉火山口 - 白沙湖住宿</div>
+                <div class="highlights">
+                    <h4>📌 景点特色</h4>
+                    <div class="highlight-item"><span class="spot-name">白沙湖：</span>一半冰蓝湖水，一半白色沙山，仙境风光。</div>
+                    <div class="highlight-item"><span class="spot-name">木吉火山口：</span>“帕米尔之眼”，遥望公格尔九别峰。</div>
+                </div>
             </div>
         </div>
 
         <!-- D13 -->
         <div class="day-card" id="D13">
-            <div class="day-header">
-                <span class="day-title">D13 高原圣湖与石头城</span>
-                <span class="day-date">10/30</span>
-            </div>
-            <div class="meta-tags">
-                <span>🚗 里程：150 km</span>
-                <span>🍱 餐饮：早</span>
-                <span>🏨 住宿：塔县</span>
-            </div>
-            <div class="route-path">📍 白沙江南岸 - 喀拉库勒湖 - 树洞公路 - 帕米尔湿地 - 石头城金草滩 - 塔县</div>
-            <div class="highlights">
-                <h4>📌 景点特色</h4>
-                <div class="highlight-item"><span class="spot-name">喀拉库勒湖：</span>倒映着“冰山之父”慕士塔格峰的高山冰蚀湖。</div>
-                <div class="highlight-item"><span class="spot-name">石头城与金草滩：</span>古丝绸之路城堡遗址与金色湿地雪山背景。</div>
+            <img class="spot-img" src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=1000&q=80" alt="喀拉库勒湖与慕士塔格峰">
+            <div class="card-content">
+                <div class="day-header">
+                    <span class="day-title">D13 高原圣湖与石头城</span>
+                    <span class="day-date">10/30</span>
+                </div>
+                <div class="meta-tags">
+                    <span>🚗 里程：150 km</span>
+                    <span>🍱 餐饮：早</span>
+                    <span>🏨 住宿：塔县</span>
+                </div>
+                <div class="route-path">📍 白沙江南岸 - 喀拉库勒湖 - 树洞公路 - 帕米尔湿地 - 石头城金草滩 - 塔县</div>
+                <div class="highlights">
+                    <h4>📌 景点特色</h4>
+                    <div class="highlight-item"><span class="spot-name">喀拉库勒湖：</span>倒映着“冰山之父”慕士塔格峰。</div>
+                    <div class="highlight-item"><span class="spot-name">石头城与金草滩：</span>夕阳下金色湿地与雪山同框。</div>
+                </div>
             </div>
         </div>
 
         <!-- D14 -->
         <div class="day-card" id="D14">
-            <div class="day-header">
-                <span class="day-title">D14 盘龙古道与冰川</span>
-                <span class="day-date">10/31</span>
-            </div>
-            <div class="meta-tags">
-                <span>🚗 里程：320 km</span>
-                <span>🍱 餐饮：早</span>
-                <span>🏨 住宿：喀什</span>
-            </div>
-            <div class="route-path">📍 塔县 - 盘龙古道 - 途观帕米尔之眼 - 慕士塔格冰川公园 - 喀什</div>
-            <div class="highlights">
-                <h4>📌 景点特色</h4>
-                <div class="highlight-item"><span class="spot-name">盘龙古道：</span>“走过了所有的弯路，从此人生尽是坦途”。</div>
-                <div class="highlight-item"><span class="spot-name">慕士塔格冰川公园：</span>近距离观赏壮丽冰川与冰塔林。</div>
+            <img class="spot-img" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1000&q=80" alt="盘龙古道与慕士塔格冰川">
+            <div class="card-content">
+                <div class="day-header">
+                    <span class="day-title">D14 盘龙古道与冰川</span>
+                    <span class="day-date">10/31</span>
+                </div>
+                <div class="meta-tags">
+                    <span>🚗 里程：320 km</span>
+                    <span>🍱 餐饮：早</span>
+                    <span>🏨 住宿：喀什</span>
+                </div>
+                <div class="route-path">📍 塔县 - 盘龙古道 - 途观帕米尔之眼 - 慕士塔格冰川公园 - 喀什</div>
+                <div class="highlights">
+                    <h4>📌 景点特色</h4>
+                    <div class="highlight-item"><span class="spot-name">盘龙古道：</span>“走过了所有的弯路，从此人生尽是坦途”。</div>
+                    <div class="highlight-item"><span class="spot-name">慕士塔格冰川公园：</span>近距离触碰冰川与冰塔林。</div>
+                </div>
             </div>
         </div>
 
         <!-- D15 -->
         <div class="day-card" id="D15">
-            <div class="day-header">
-                <span class="day-title">D15 喀什周边打卡与饕餮美食</span>
-                <span class="day-date">11/01</span>
-            </div>
-            <div class="meta-tags">
-                <span>🚗 里程：460 km</span>
-                <span>🍱 餐饮：早</span>
-                <span>🏨 住宿：客户自理</span>
-            </div>
-            <div class="route-path">📍 喀什 - 贝壳山 - 西极界碑 - 喀什博物馆 - 香妃园 - 牛羊大巴扎 - 汉巴扎 - 喀什</div>
-            <div class="highlights">
-                <h4>📌 景点特色与美食大汇总</h4>
-                <div class="highlight-item"><span class="spot-name">喀什打卡：</span><b>西极界碑（乌恰）、贝壳山、喀什博物馆、香妃园、牛羊大巴扎、汉巴扎、喀什跨仕大观园</b>（乃则尔巴格镇迎宾大道668号）。</div>
-                <div class="highlight-item"><span class="food-tag">喀什顶级美食推荐</span>
-                    <br>• <b>踏吉美蓝美食宫：</b>阿热亚路夏米其委员会4组48号
-                    <br>• <b>玫客满拉美食城：</b>吐曼路75号古城集宿10号楼
-                    <br>• <b>努尔噢美泉宫：</b>夏马勒巴格镇2村天江南路100号城投绿城玉园小区6号楼2层2004商铺
-                    <br>• <b>双包子：</b>西域大道南门大门旁“包无界”
-                    <br>• <b>马氏案板牛蹄：</b>吐曼路6号B1栋（你好酒店右侧）
-                    <br>• <b>古域老家餐馆：</b>商业步行街5号
-                    <br>• <b>月星上海城：</b>西域大道198号
+            <img class="spot-img" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80" alt="西极界碑与喀什晚霞">
+            <div class="card-content">
+                <div class="day-header">
+                    <span class="day-title">D15 祖国最西端与饕餮美食</span>
+                    <span class="day-date">11/01</span>
+                </div>
+                <div class="meta-tags">
+                    <span>🚗 里程：460 km</span>
+                    <span>🍱 餐饮：早</span>
+                    <span>🏨 住宿：客户自理</span>
+                </div>
+                <div class="route-path">📍 喀什 - 贝壳山 - 西极界碑 - 喀什博物馆 - 香妃园 - 牛羊大巴扎 - 汉巴扎 - 喀什</div>
+                <div class="highlights">
+                    <h4>📌 景点特色与美食大汇总</h4>
+                    <div class="highlight-item"><span class="spot-name">西极界碑：</span>中国大陆最西端，追赶最后一缕晚霞。</div>
+                    <div class="highlight-item"><span class="food-tag">喀什美食汇总</span>踏吉美蓝美食宫、玫客满拉美食城、努尔噢美泉宫、包无界双包子、马氏案板牛蹄。</div>
                 </div>
             </div>
         </div>
 
         <!-- D16 -->
         <div class="day-card" id="D16">
-            <div class="day-header">
-                <span class="day-title">D16 顺利返程</span>
-                <span class="day-date">11/02</span>
-            </div>
-            <div class="meta-tags">
-                <span>🚗 里程：15 km</span>
-                <span>🍱 餐饮：早</span>
-                <span>🏨 住宿：无</span>
-            </div>
-            <div class="route-path">📍 喀什 - 散团 - 家乡</div>
-            <div class="highlights">
-                <h4>📌 提示</h4>
-                <div class="highlight-item">根据航班/火车时间前往机场/车站，结束满载美食与文化的南疆之旅！</div>
+            <img class="spot-img" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1000&q=80" alt="返程航班">
+            <div class="card-content">
+                <div class="day-header">
+                    <span class="day-title">D16 顺利返程</span>
+                    <span class="day-date">11/02</span>
+                </div>
+                <div class="meta-tags">
+                    <span>🚗 里程：15 km</span>
+                    <span>🍱 餐饮：早</span>
+                    <span>🏨 住宿：无</span>
+                </div>
+                <div class="route-path">📍 喀什 - 散团 - 家乡</div>
+                <div class="highlights">
+                    <h4>📌 提示</h4>
+                    <div class="highlight-item">根据航班/火车时间前往机场/车站，结束满载风光与回忆的南疆之旅！</div>
+                </div>
             </div>
         </div>
 
