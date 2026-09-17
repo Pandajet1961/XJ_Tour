@@ -135,8 +135,19 @@
             color: #666;
             margin-bottom: 15px;
             background: #f8f9fa;
-            padding: 8px 12px;
+            padding: 10px 12px;
             border-radius: 6px;
+            flex-wrap: wrap;
+        }
+
+        .meta-tags span {
+            display: flex;
+            align-items: center;
+        }
+
+        .hotel-tag {
+            color: #1565c0;
+            font-weight: 600;
         }
 
         .route-path {
@@ -219,7 +230,7 @@
         @media (max-width: 600px) {
             .meta-tags {
                 flex-direction: column;
-                gap: 4px;
+                gap: 5px;
             }
             .spot-img {
                 height: 180px;
@@ -231,7 +242,7 @@
 
     <header>
         <h1>新疆南疆秋季全景 16日游</h1>
-        <p>行程手册 & 景点风光影像指南 (10.18 - 11.02)</p>
+        <p>行程手册 & 景点风光影像指南 (2026.10.18 - 11.02)</p>
     </header>
 
     <div class="nav-scroller" id="nav"></div>
@@ -244,14 +255,16 @@
             <div class="card-content">
                 <div class="day-header">
                     <span class="day-title">D1 集合作业</span>
-                    <span class="day-date">10/18</span>
+                    <span class="day-date">10/18 (周日)</span>
                 </div>
                 <div class="meta-tags">
                     <span>🚗 里程：20 km</span>
                     <span>🍱 餐饮：无</span>
-                    <span>🏨 住宿：乌鲁木齐</span>
+                    <span class="hotel-tag">🏨 住宿：弗洛拉·秘境酒店 (4钻)
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=乌鲁木齐市弗洛拉秘境酒店&output=html" target="_blank">🗺️ 导航</a>
+                    </span>
                 </div>
-                <div class="route-path">📍 家 - 乌鲁木齐 - 乌鲁木齐市区自由活动</div>
+                <div class="route-path">📍 家 - 乌鲁木齐 - 乌鲁木齐市区自由活动 【集合日】</div>
                 <div class="highlights">
                     <h4>📌 今日特色、景致与餐饮建议</h4>
                     <div class="highlight-item">
@@ -259,7 +272,7 @@
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=乌鲁木齐市新疆古生态园&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="highlight-item">
-                        <span class="spot-name">红山公园：</span>日落俯瞰全景
+                        <span class="spot-name">红山公园：</span>日落俯瞰乌市全景
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=乌鲁木齐红山公园&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="highlight-item"><span class="food-tag">餐饮推荐</span>和田二街、爸爸哈妮低糖烘焙（教委小区店）、依娜娃娃儿牛肉面。</div>
@@ -272,23 +285,25 @@
             <img class="spot-img" src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1000&q=80" alt="新疆国际大巴扎">
             <div class="card-content">
                 <div class="day-header">
-                    <span class="day-title">D2 乌市人文深入游</span>
-                    <span class="day-date">10/19</span>
+                    <span class="day-title">D2 乌市人文自由行</span>
+                    <span class="day-date">10/19 (周一)</span>
                 </div>
                 <div class="meta-tags">
                     <span>🚗 里程：0 km</span>
                     <span>🍱 餐饮：早</span>
-                    <span>🏨 住宿：乌鲁木齐</span>
+                    <span class="hotel-tag">🏨 住宿：弗洛拉·秘境酒店 (4钻)
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=乌鲁木齐市弗洛拉秘境酒店&output=html" target="_blank">🗺️ 导航</a>
+                    </span>
                 </div>
-                <div class="route-path">📍 新疆维吾尔自治区博物馆 - 国际大巴扎 - 市区自由活动</div>
+                <div class="route-path">📍 乌鲁木齐自由活动一天 (不安排用车)</div>
                 <div class="highlights">
                     <h4>📌 今日特色与建议</h4>
                     <div class="highlight-item">
-                        <span class="spot-name">新疆维吾尔自治区博物馆：</span>重点观赏楼兰女尸展
+                        <span class="spot-name">新疆维吾尔自治区博物馆：</span>重点观赏楼兰女尸等干尸展厅与丝路珍宝
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=新疆维吾尔自治区博物馆&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="highlight-item">
-                        <span class="spot-name">新疆国际大巴扎：</span>伊斯兰风情与采买干果
+                        <span class="spot-name">新疆国际大巴扎：</span>体验浓郁西域风情与选购特色干果
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=新疆国际大巴扎&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                 </div>
@@ -301,22 +316,24 @@
             <div class="card-content">
                 <div class="day-header">
                     <span class="day-title">D3 吐鲁番风情与古城日落</span>
-                    <span class="day-date">10/20</span>
+                    <span class="day-date">10/20 (周二)</span>
                 </div>
                 <div class="meta-tags">
                     <span>🚗 里程：200 km</span>
                     <span>🍱 餐饮：早</span>
-                    <span>🏨 住宿：吐鲁番</span>
+                    <span class="hotel-tag">🏨 住宿：智选酒店 (4钻)
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=吐鲁番市智选酒店&output=html" target="_blank">🗺️ 导航</a>
+                    </span>
                 </div>
-                <div class="route-path">📍 乌鲁木齐 - 坎儿井 - 火焰山 - 吐峪沟麻扎村 - 交河故城 - 高昌故城 - 吐鲁番</div>
+                <div class="route-path">📍 乌鲁木齐博物馆 - 坎儿井 - 火焰山 - 吐峪沟麻扎村 - 吐鲁番</div>
                 <div class="highlights">
                     <h4>📌 景点特色与夜市推荐</h4>
                     <div class="highlight-item">
-                        <span class="spot-name">交河故城：</span>古生土建筑，傍晚看日落
+                        <span class="spot-name">交河故城：</span>古老生土建筑城市遗址，傍晚看日落光影极其震撼
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=吐鲁番交河故城&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="highlight-item">
-                        <span class="spot-name">吐峪沟麻扎村：</span>黄土古村落
+                        <span class="spot-name">吐峪沟麻扎村：</span>吐鲁番古老黄土民居村落
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=吐鲁番吐峪沟麻扎村&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="highlight-item">
@@ -337,14 +354,16 @@
             <div class="card-content">
                 <div class="day-header">
                     <span class="day-title">D4 走进南疆 gateway</span>
-                    <span class="day-date">10/21</span>
+                    <span class="day-date">10/21 (周三)</span>
                 </div>
                 <div class="meta-tags">
                     <span>🚗 里程：150 km</span>
                     <span>🍱 餐饮：早</span>
-                    <span>🏨 住宿：库尔勒</span>
+                    <span class="hotel-tag">🏨 住宿：开泽酒店 (博物馆市政府店, 4钻)
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=库尔勒市开泽酒店博物馆市政府店&output=html" target="_blank">🗺️ 导航</a>
+                    </span>
                 </div>
-                <div class="route-path">📍 库尔勒 - 铁门关 - 巴州博物馆 - 博斯腾湖 - 永安塔夜游</div>
+                <div class="route-path">📍 库尔勒 - 铁门关 - 南北疆分界线 - 博斯腾湖 - 库尔勒</div>
                 <div class="highlights">
                     <h4>📌 景点特色与夜游推荐</h4>
                     <div class="highlight-item">
@@ -352,11 +371,11 @@
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=巴音郭楞蒙古自治州博物馆&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="highlight-item">
-                        <span class="spot-name">博斯腾湖：</span>
+                        <span class="spot-name">博斯腾湖：</span>中国最大内陆淡水湖
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=博斯腾湖景区&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="highlight-item">
-                        <span class="spot-name">永安塔：</span>夜景灯光秀
+                        <span class="spot-name">永安塔：</span>建议夜游观赏灯光夜景
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=库尔勒永安塔&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                 </div>
@@ -369,22 +388,24 @@
             <div class="card-content">
                 <div class="day-header">
                     <span class="day-title">D5 胡杨林秘境</span>
-                    <span class="day-date">10/22</span>
+                    <span class="day-date">10/22 (周四)</span>
                 </div>
                 <div class="meta-tags">
                     <span>🚗 里程：380 km</span>
                     <span>🍱 餐饮：早</span>
-                    <span>🏨 住宿：库尔勒</span>
+                    <span class="hotel-tag">🏨 住宿：开泽酒店 (博物馆市政府店, 4钻)
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=库尔勒市开泽酒店博物馆市政府店&output=html" target="_blank">🗺️ 导航</a>
+                    </span>
                 </div>
                 <div class="route-path">📍 库尔勒 - 罗布人村寨 - 葫芦岛胡杨景区 - 库尔勒</div>
                 <div class="highlights">
                     <h4>📌 景点特色</h4>
                     <div class="highlight-item">
-                        <span class="spot-name">罗布人村寨：</span>
+                        <span class="spot-name">罗布人村寨：</span>沙漠、塔里木河与胡杨相映成趣
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=罗布人村寨&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="highlight-item">
-                        <span class="spot-name">葫芦岛胡杨景区：</span>水上胡杨大片
+                        <span class="spot-name">葫芦岛胡杨景区：</span>水上金秋胡杨大片最佳拍摄地
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=尉犁县葫芦岛胡杨林景区&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="notice">⚠️ 注：此日行程外籍游客不能参观。</div>
@@ -398,26 +419,28 @@
             <div class="card-content">
                 <div class="day-header">
                     <span class="day-title">D6 塔里木金色廊道与龟兹老城</span>
-                    <span class="day-date">10/23</span>
+                    <span class="day-date">10/23 (周五)</span>
                 </div>
                 <div class="meta-tags">
                     <span>🚗 里程：340 km</span>
                     <span>🍱 餐饮：早</span>
-                    <span>🏨 住宿：库车</span>
+                    <span class="hotel-tag">🏨 住宿：家和国际酒店 (4钻)
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=库车市家和国际酒店&output=html" target="_blank">🗺️ 导航</a>
+                    </span>
                 </div>
-                <div class="route-path">📍 库尔勒 - 轮台胡杨林 - 库车老城巷子漫步 - 库车大寺 - 库车王府</div>
+                <div class="route-path">📍 库尔勒 - 途观塔河流域 - 轮台胡杨林 - 库车王府 - 库车</div>
                 <div class="highlights">
                     <h4>📌 景点特色与老城精选巷子</h4>
                     <div class="highlight-item">
-                        <span class="spot-name">轮台塔里木胡杨林公园：</span>
+                        <span class="spot-name">轮台塔里木胡杨林公园：</span>乘小火车穿越金黄树海
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=轮台塔里木胡杨林公园&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="highlight-item">
-                        <span class="spot-name">库车老城漫步：</span>热斯坦老街、花帽街、击鼓巷
+                        <span class="spot-name">库车老城人文漫步：</span>打卡热斯坦老街、花帽街、击鼓巷、清城巷、龟兹小巷、天空小巷、泥沙罕故居
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=库车老城热斯坦街&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="highlight-item">
-                        <span class="spot-name">库车王府：</span>
+                        <span class="spot-name">库车王府：</span>伊斯兰古建与末代王府历史
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=库车王府&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                 </div>
@@ -430,24 +453,27 @@
             <div class="card-content">
                 <div class="day-header">
                     <span class="day-title">D7 地质奇观与石窟</span>
-                    <span class="day-date">10/24</span>
+                    <span class="day-date">10/24 (周六)</span>
                 </div>
                 <div class="meta-tags">
                     <span>🚗 里程：200 km</span>
                     <span>🍱 餐饮：早</span>
-                    <span>🏨 住宿：库车</span>
+                    <span class="hotel-tag">🏨 住宿：家和国际酒店 (4钻)
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=库车市家和国际酒店&output=html" target="_blank">🗺️ 导航</a>
+                    </span>
                 </div>
                 <div class="route-path">📍 库车 - 天山神秘大峡谷 - 烈焰泉 - 克孜尔千佛洞 - 苏巴什佛寺遗址 - 库车</div>
                 <div class="highlights">
                     <h4>📌 景点特色</h4>
                     <div class="highlight-item">
-                        <span class="spot-name">天山神秘大峡谷：</span>
+                        <span class="spot-name">天山神秘大峡谷：</span>红褐色悬崖绝壁，丹霞侵蚀奇景
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=天山神秘大峡谷&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="highlight-item">
-                        <span class="spot-name">克孜尔千佛洞：</span>
+                        <span class="spot-name">克孜尔千佛洞：</span>古龟兹石窟艺术瑰宝
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=克孜尔千佛洞&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
+                    <div class="highlight-item"><span class="spot-name">苏巴什佛寺遗址：</span>古龟兹国最大佛寺遗迹。</div>
                 </div>
             </div>
         </div>
@@ -458,27 +484,25 @@
             <div class="card-content">
                 <div class="day-header">
                     <span class="day-title">D8 壮美大峡谷与兵团记忆</span>
-                    <span class="day-date">10/25</span>
+                    <span class="day-date">10/25 (周日)</span>
                 </div>
                 <div class="meta-tags">
                     <span>🚗 里程：350 km</span>
                     <span>🍱 餐饮：早</span>
-                    <span>🏨 住宿：阿拉尔</span>
+                    <span class="hotel-tag">🏨 住宿：桉漫君悦酒店 (4钻)
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=阿拉尔市桉漫君悦酒店&output=html" target="_blank">🗺️ 导航</a>
+                    </span>
                 </div>
-                <div class="route-path">📍 库车 - 温宿大峡谷 - 阿拉尔 - 塔里木大学 - 359旅本质纪念馆 - 沙漠之门</div>
+                <div class="route-path">📍 库车 - 温宿大峡谷 - 阿拉尔</div>
                 <div class="highlights">
                     <h4>📌 景点特色</h4>
                     <div class="highlight-item">
-                        <span class="spot-name">温宿大峡谷：</span>峡谷之王
+                        <span class="spot-name">温宿大峡谷：</span>峡谷之王，拥有远古岩盐巨型雅丹与丹霞集群
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=温宿大峡谷&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="highlight-item">
-                        <span class="spot-name">三五九旅纪念馆：</span>
+                        <span class="spot-name">阿拉尔人文：</span>三五九旅纪念馆、塔里木大学与沙漠之门
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=阿拉尔市三五九旅纪念馆&output=html" target="_blank">🗺️ 百度导航</a>
-                    </div>
-                    <div class="highlight-item">
-                        <span class="spot-name">沙漠之门景区：</span>
-                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=阿拉尔沙漠之门&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                 </div>
             </div>
@@ -490,22 +514,24 @@
             <div class="card-content">
                 <div class="day-header">
                     <span class="day-title">D9 穿沙公路与和田人文美景</span>
-                    <span class="day-date">10/26</span>
+                    <span class="day-date">10/26 (周一)</span>
                 </div>
                 <div class="meta-tags">
                     <span>🚗 里程：460 km</span>
                     <span>🍱 餐饮：早</span>
-                    <span>🏨 住宿：和田</span>
+                    <span class="hotel-tag">🏨 住宿：建国璞隐酒店 (4钻)
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=和田市建国璞隐酒店&output=html" target="_blank">🗺️ 导航</a>
+                    </span>
                 </div>
-                <div class="route-path">📍 阿拉尔 - 沙漠公路 - 翡翠湖 - 团城民街 - 约特干故城 - 和田夜市</div>
+                <div class="route-path">📍 阿拉尔 - 塔克拉玛干沙漠公路 - 沙漠翡翠湖 - 和田夜市</div>
                 <div class="highlights">
                     <h4>📌 景点特色与美食</h4>
                     <div class="highlight-item">
-                        <span class="spot-name">约特干故城：</span>古于阗国夜景演艺
+                        <span class="spot-name">约特干故城：</span>古于阗国夜景沉浸式演艺
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=和田约特干故城&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="highlight-item">
-                        <span class="spot-name">和田团城：</span>
+                        <span class="spot-name">和田团城：</span>体验特色民俗街区
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=和田团城民街&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="highlight-item">
@@ -522,22 +548,24 @@
             <div class="card-content">
                 <div class="day-header">
                     <span class="day-title">D10 昆仑起点与莎车非遗</span>
-                    <span class="day-date">10/27</span>
+                    <span class="day-date">10/27 (周二)</span>
                 </div>
                 <div class="meta-tags">
                     <span>🚗 里程：350 km</span>
                     <span>🍱 餐饮：早</span>
-                    <span>🏨 住宿：莎车</span>
+                    <span class="hotel-tag">🏨 住宿：亚朵酒店 (人民政府迎宾路店, 4钻)
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=莎车县亚朵酒店迎宾路店&output=html" target="_blank">🗺️ 导航</a>
+                    </span>
                 </div>
-                <div class="route-path">📍 和田 - 叶城0公里打卡处 - 莎车老城 - 喀尔羌汗王宫 - 阿曼尼沙汗纪念陵 - 玄奘讲经台</div>
+                <div class="route-path">📍 和田 - 叶城0公里打卡处 - 莎车老城 - 莎车</div>
                 <div class="highlights">
                     <h4>📌 景点特色</h4>
                     <div class="highlight-item">
-                        <span class="spot-name">新藏线0公里起点（叶城）：</span>
+                        <span class="spot-name">新藏线0公里起点（叶城）：</span>“天路零公里”地标
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=叶城零公里驾车起点&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="highlight-item">
-                        <span class="spot-name">叶尔羌汗王宫（非遗木卡姆）：</span>
+                        <span class="spot-name">叶尔羌汗王宫：</span>欣赏非遗《十二木卡姆》实景
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=莎车叶尔羌汗王宫&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                 </div>
@@ -550,14 +578,16 @@
             <div class="card-content">
                 <div class="day-header">
                     <span class="day-title">D11 天门与喀什古城深度游</span>
-                    <span class="day-date">10/28</span>
+                    <span class="day-date">10/28 (周三)</span>
                 </div>
                 <div class="meta-tags">
                     <span>🚗 里程：300 km</span>
                     <span>🍱 餐饮：早</span>
-                    <span>🏨 住宿：喀什</span>
+                    <span class="hotel-tag">🏨 住宿：金美伦酒店 (4钻)
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=喀什市金美伦酒店&output=html" target="_blank">🗺️ 导航</a>
+                    </span>
                 </div>
-                <div class="route-path">📍 莎车 - 阿图什天门 - 喀什古城漫步 - 高台民居 - 百年老茶馆</div>
+                <div class="route-path">📍 莎车 - 阿图什天门景区 - 喀什古城漫步 - 喀什</div>
                 <div class="highlights">
                     <h4>📌 景点特色与手写笔记①古城地标+11精选巷</h4>
                     <div class="highlight-item">
@@ -591,22 +621,24 @@
             <div class="card-content">
                 <div class="day-header">
                     <span class="day-title">D12 登上帕米尔高原</span>
-                    <span class="day-date">10/29</span>
+                    <span class="day-date">10/29 (周四)</span>
                 </div>
                 <div class="meta-tags">
                     <span>🚗 里程：300 km</span>
                     <span>🍱 餐饮：早</span>
-                    <span>🏨 住宿：白沙湖酒店</span>
+                    <span class="hotel-tag">🏨 住宿：橙芷·白沙湖 (4钻)
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=阿克陶县橙芷白沙湖酒店&output=html" target="_blank">🗺️ 导航</a>
+                    </span>
                 </div>
                 <div class="route-path">📍 喀什 - 白沙湖北岸 - 十八罗汉峰 - 木吉火山口 - 白沙湖住宿</div>
                 <div class="highlights">
                     <h4>📌 景点特色</h4>
                     <div class="highlight-item">
-                        <span class="spot-name">帕米尔白沙湖景区：</span>
+                        <span class="spot-name">帕米尔白沙湖景区：</span>一半冰蓝湖水，一半白色沙山
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=克州阿克陶县白沙湖景区&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="highlight-item">
-                        <span class="spot-name">木吉火山口：</span>帕米尔之眼
+                        <span class="spot-name">木吉火山口：</span>“帕米尔之眼”
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=阿克陶县木吉火山口&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                 </div>
@@ -619,22 +651,24 @@
             <div class="card-content">
                 <div class="day-header">
                     <span class="day-title">D13 高原圣湖与石头城</span>
-                    <span class="day-date">10/30</span>
+                    <span class="day-date">10/30 (周五)</span>
                 </div>
                 <div class="meta-tags">
                     <span>🚗 里程：150 km</span>
                     <span>🍱 餐饮：早</span>
-                    <span>🏨 住宿：塔县</span>
+                    <span class="hotel-tag">🏨 住宿：星辰国际酒店 (塔什库尔干店, 4钻)
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=塔什库尔干县星辰国际酒店&output=html" target="_blank">🗺️ 导航</a>
+                    </span>
                 </div>
-                <div class="route-path">📍 白沙江南岸 - 喀拉库勒湖 - 树洞公路 - 帕米尔湿地 - 石头城金草滩 - 塔县</div>
+                <div class="route-path">📍 白沙湖南岸 - 喀拉库勒湖 - 树洞公路 - 帕米尔湿地 - 石头城金草滩 - 塔县</div>
                 <div class="highlights">
                     <h4>📌 景点特色</h4>
                     <div class="highlight-item">
-                        <span class="spot-name">喀拉库勒湖：</span>倒映慕士塔格峰
+                        <span class="spot-name">喀拉库勒湖：</span>倒映着慕士塔格峰的高山冰蚀湖
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=喀拉库勒湖景区&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="highlight-item">
-                        <span class="spot-name">石头城金草滩景区：</span>
+                        <span class="spot-name">石头城与金草滩：</span>夕阳下金色湿地与雪山同框
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=塔什库尔干石头城景区&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                 </div>
@@ -647,22 +681,24 @@
             <div class="card-content">
                 <div class="day-header">
                     <span class="day-title">D14 盘龙古道与冰川</span>
-                    <span class="day-date">10/31</span>
+                    <span class="day-date">10/31 (周六)</span>
                 </div>
                 <div class="meta-tags">
                     <span>🚗 里程：320 km</span>
                     <span>🍱 餐饮：早</span>
-                    <span>🏨 住宿：喀什</span>
+                    <span class="hotel-tag">🏨 住宿：金美伦酒店 (4钻)
+                        <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=喀什市金美伦酒店&output=html" target="_blank">🗺️ 导航</a>
+                    </span>
                 </div>
                 <div class="route-path">📍 塔县 - 盘龙古道 - 途观帕米尔之眼 - 慕士塔格冰川公园 - 喀什</div>
                 <div class="highlights">
                     <h4>📌 景点特色与晚间美餐</h4>
                     <div class="highlight-item">
-                        <span class="spot-name">盘龙古道起点：</span>弯道奇观
+                        <span class="spot-name">盘龙古道起点：</span>“走过了所有的弯路，从此人生尽是坦途”
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=盘龙古道入口&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="highlight-item">
-                        <span class="spot-name">慕士塔格冰川公园：</span>
+                        <span class="spot-name">慕士塔格冰川公园：</span>近距离触碰冰川与冰塔林
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=慕士塔格冰川公园&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="highlight-item"><span class="food-tag">手写笔记①&③推荐晚餐导航</span>
@@ -683,18 +719,18 @@
             <div class="card-content">
                 <div class="day-header">
                     <span class="day-title">D15 祖国最西端 & 喀什人文大满贯</span>
-                    <span class="day-date">11/01</span>
+                    <span class="day-date">11/01 (周日)</span>
                 </div>
                 <div class="meta-tags">
                     <span>🚗 里程：460 km</span>
                     <span>🍱 餐饮：早</span>
-                    <span>🏨 住宿：客户自理</span>
+                    <span class="hotel-tag">🏨 住宿：客户自理 (喀什)</span>
                 </div>
                 <div class="route-path">📍 喀什 - 贝壳山 - 西极界碑 - 喀什博物馆 - 香妃园 - 牛羊大巴扎 - 汉巴扎 - 跨仕大观园 - 商业步行街</div>
                 <div class="highlights">
                     <h4>📌 景点特色与手写笔记完整打卡列表</h4>
                     <div class="highlight-item">
-                        <span class="spot-name">西极塔界碑（乌恰）：</span>祖国最西端
+                        <span class="spot-name">西极塔界碑（乌恰）：</span>祖国大陆最西端
                         <a class="map-link map-baidu" href="https://api.map.baidu.com/geocoder?address=乌恰县西极塔&output=html" target="_blank">🗺️ 百度导航</a>
                     </div>
                     <div class="highlight-item">
@@ -718,17 +754,17 @@
             <div class="card-content">
                 <div class="day-header">
                     <span class="day-title">D16 顺利返程</span>
-                    <span class="day-date">11/02</span>
+                    <span class="day-date">11/02 (周一)</span>
                 </div>
                 <div class="meta-tags">
                     <span>🚗 里程：15 km</span>
                     <span>🍱 餐饮：早</span>
-                    <span>🏨 住宿：无</span>
+                    <span class="hotel-tag">🏨 住宿：温馨的家</span>
                 </div>
                 <div class="route-path">📍 喀什 - 散团 - 家乡</div>
                 <div class="highlights">
                     <h4>📌 提示</h4>
-                    <div class="highlight-item">根据航班/火车时间前往机场/车站，结束满载风光与美食的南疆之旅！</div>
+                    <div class="highlight-item">根据航班/火车时间前往机场/车站，结束圆满的南疆秋景之旅！</div>
                 </div>
             </div>
         </div>
